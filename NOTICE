@@ -1,0 +1,22 @@
+Mochi models
+
+This repository redistributes converted machine-learning models and data. Mochi
+converted them (format conversion, float16 weight storage, and trimming); it did
+not train or fine-tune them.
+
+MegaDetector v6 (MDV6-apa-rtdetr-c)
+  Microsoft AI for Good Lab. https://github.com/microsoft/Biodiversity
+  Weights: https://zenodo.org/records/15398270 (CC-BY-4.0); model listed as
+  Apache-2.0 in the MegaDetector model zoo.
+  RT-DETRv2 model code: Apache License 2.0, Copyright (c) 2023 lyuwenyu.
+  Changes: exported to ONNX with post-processing included.
+
+BioCLIP 2
+  Copyright (c) 2023-2026 Imageomics Institute. MIT License.
+  https://huggingface.co/imageomics/bioclip-2 (doi:10.57967/hf/5765)
+  Changes: image encoder exported to ONNX; weights stored as float16.
+
+TreeOfLife-200M
+  Imageomics Institute. Compilation dedicated to the public domain (CC0 1.0).
+  https://huggingface.co/datasets/imageomics/TreeOfLife-200M
+  Changes: species text embeddings and names trimmed to 79,485 animals.
